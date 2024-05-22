@@ -241,7 +241,7 @@ class CheckIn {
     } catch (e) {
       console.error(e.message);
    
-      throw new Error("登录失败, 请尝试更新Cookies!",this.cookie);
+      // throw new Error("登录失败, 请尝试更新Cookies!",this.cookie);
     }
 
     this.username = juejin.getUser().user_name;
