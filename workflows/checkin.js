@@ -240,8 +240,8 @@ class CheckIn {
       await juejin.login(this.cookie);
     } catch (e) {
       console.error(e.message);
-      console.log(this.cookie)
-      throw new Error("登录失败, 请尝试更新Cookies!");
+   
+      throw new Error("登录失败, 请尝试更新Cookies!",this.cookie);
     }
 
     this.username = juejin.getUser().user_name;
